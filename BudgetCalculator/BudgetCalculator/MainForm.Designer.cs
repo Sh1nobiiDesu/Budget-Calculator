@@ -35,9 +35,9 @@
             this.BTN_Delete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.BTN_Edit = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGV_Table = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -94,28 +94,28 @@
             this.BTN_Edit.Size = new System.Drawing.Size(39, 24);
             this.BTN_Edit.Text = "Edit";
             // 
-            // dataGridView1
+            // DGV_Table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(849, 408);
-            this.dataGridView1.TabIndex = 3;
+            this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Table.Location = new System.Drawing.Point(12, 30);
+            this.DGV_Table.Name = "DGV_Table";
+            this.DGV_Table.RowHeadersWidth = 51;
+            this.DGV_Table.RowTemplate.Height = 24;
+            this.DGV_Table.Size = new System.Drawing.Size(849, 408);
+            this.DGV_Table.TabIndex = 3;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,7 +129,7 @@
         private System.Windows.Forms.ToolStripButton BTN_Delete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton BTN_Edit;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGV_Table;
     }
 }
 

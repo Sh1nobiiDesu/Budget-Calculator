@@ -34,10 +34,13 @@
             this.LBL_Unit = new System.Windows.Forms.Label();
             this.LBL_Price = new System.Windows.Forms.Label();
             this.TXTB_Unit = new System.Windows.Forms.TextBox();
-            this.TXTB_Price = new System.Windows.Forms.TextBox();
-            this.TXTB_Quantity = new System.Windows.Forms.TextBox();
             this.BTN_add = new System.Windows.Forms.Button();
             this.BTN_Cancel = new System.Windows.Forms.Button();
+            this.TXTB_Quantity = new System.Windows.Forms.NumericUpDown();
+            this.TXTB_Price = new System.Windows.Forms.NumericUpDown();
+            this.LBL_Error = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.TXTB_Quantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXTB_Price)).BeginInit();
             this.SuspendLayout();
             // 
             // LBL_Name
@@ -91,20 +94,6 @@
             this.TXTB_Unit.TabIndex = 5;
             this.TXTB_Unit.TextChanged += new System.EventHandler(this.TXTB_Unit_TextChanged);
             // 
-            // TXTB_Price
-            // 
-            this.TXTB_Price.Location = new System.Drawing.Point(12, 196);
-            this.TXTB_Price.Name = "TXTB_Price";
-            this.TXTB_Price.Size = new System.Drawing.Size(301, 22);
-            this.TXTB_Price.TabIndex = 6;
-            // 
-            // TXTB_Quantity
-            // 
-            this.TXTB_Quantity.Location = new System.Drawing.Point(12, 84);
-            this.TXTB_Quantity.Name = "TXTB_Quantity";
-            this.TXTB_Quantity.Size = new System.Drawing.Size(301, 22);
-            this.TXTB_Quantity.TabIndex = 7;
-            // 
             // BTN_add
             // 
             this.BTN_add.Location = new System.Drawing.Point(12, 281);
@@ -123,15 +112,39 @@
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
             // 
+            // TXTB_Quantity
+            // 
+            this.TXTB_Quantity.Location = new System.Drawing.Point(15, 84);
+            this.TXTB_Quantity.Name = "TXTB_Quantity";
+            this.TXTB_Quantity.Size = new System.Drawing.Size(298, 22);
+            this.TXTB_Quantity.TabIndex = 10;
+            // 
+            // TXTB_Price
+            // 
+            this.TXTB_Price.Location = new System.Drawing.Point(15, 196);
+            this.TXTB_Price.Name = "TXTB_Price";
+            this.TXTB_Price.Size = new System.Drawing.Size(298, 22);
+            this.TXTB_Price.TabIndex = 11;
+            // 
+            // LBL_Error
+            // 
+            this.LBL_Error.ForeColor = System.Drawing.Color.Red;
+            this.LBL_Error.Location = new System.Drawing.Point(12, 360);
+            this.LBL_Error.Name = "LBL_Error";
+            this.LBL_Error.Size = new System.Drawing.Size(301, 62);
+            this.LBL_Error.TabIndex = 12;
+            this.LBL_Error.Text = "Invalid Input detected (Please chek if each input is correct)";
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 450);
+            this.Controls.Add(this.LBL_Error);
+            this.Controls.Add(this.TXTB_Price);
+            this.Controls.Add(this.TXTB_Quantity);
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.BTN_add);
-            this.Controls.Add(this.TXTB_Quantity);
-            this.Controls.Add(this.TXTB_Price);
             this.Controls.Add(this.TXTB_Unit);
             this.Controls.Add(this.LBL_Price);
             this.Controls.Add(this.LBL_Unit);
@@ -140,6 +153,8 @@
             this.Controls.Add(this.LBL_Name);
             this.Name = "AddForm";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.TXTB_Quantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TXTB_Price)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,10 +168,11 @@
         private System.Windows.Forms.Label LBL_Unit;
         private System.Windows.Forms.Label LBL_Price;
         private System.Windows.Forms.TextBox TXTB_Unit;
-        private System.Windows.Forms.TextBox TXTB_Price;
-        private System.Windows.Forms.TextBox TXTB_Quantity;
         private System.Windows.Forms.Button BTN_add;
         private System.Windows.Forms.Button BTN_Cancel;
+        private System.Windows.Forms.NumericUpDown TXTB_Quantity;
+        private System.Windows.Forms.NumericUpDown TXTB_Price;
+        private System.Windows.Forms.Label LBL_Error;
     }
 }
 

@@ -6,11 +6,21 @@ using System.Threading.Tasks;
 
 namespace BudgetCalculator
 {
-    internal class Items
+    public class Items
     {
-        private string _name;
-        private string _unit;
-        private int _count;
-        private int _price;
+        public string Name {  get; private set; }
+        public string Unit {   get; private set; }
+        public decimal Quantity {  get; private set; }
+        public decimal Price {  get; private set; }
+        public decimal TotalPrice { get; private set; }
+
+        public Items(string name, string unit, decimal count, decimal price)
+        {
+            Name = name;
+            Unit = unit;
+            Quantity = count;
+            Price = price;
+            TotalPrice = Math.Round(count * price,2);
+        }
     }
 }

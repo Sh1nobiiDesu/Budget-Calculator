@@ -12,3 +12,14 @@ C:\Users\markt\OneDrive\Documents\GitHub\Personal_Projects\BudgetCalculator\Budg
 C:\Users\markt\OneDrive\Documents\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\bin\Debug\AddDLG.exe.config
 C:\Users\markt\OneDrive\Documents\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCa.98875F06.Up2Date
 C:\Users\markt\OneDrive\Documents\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.MainForm.resources
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.exe.config
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.exe
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\bin\Debug\BudgetCalculator.pdb
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.csproj.AssemblyReference.cache
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\AddDLG.AddForm.resources
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.MainForm.resources
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.Properties.Resources.resources
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.csproj.GenerateResource.cache
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.csproj.CoreCompileInputs.cache
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.exe
+C:\Users\markt\OneDrive\Desktop\GitHub\Personal_Projects\BudgetCalculator\BudgetCalculator\obj\Debug\BudgetCalculator.pdb

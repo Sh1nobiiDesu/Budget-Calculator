@@ -13,16 +13,24 @@ namespace BudgetCalculator
 {
     public partial class MainForm : Form
     {
-        List<int> mylist = new List<int>();
+        List<Items> _myItems = new List<Items>();
         public MainForm()
         {
             InitializeComponent();
+            DGV_Table.DataSource = null;
+            DGV_Table.DataSource = _myItems;
         }
 
         private void BTN_Add_Click(object sender, EventArgs e)
         {
-            AddForm dlg = new AddForm();
-            dlg.ShowDialog();
+            var dlg = new AddForm();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                _myItems.Add(dlg.newItem);
+                DGV_Table.DataSource = null;
+                DGV_Table.DataSource = _myItems;
+            }
+
         }
     }
 }
