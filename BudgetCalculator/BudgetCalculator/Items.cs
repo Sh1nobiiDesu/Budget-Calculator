@@ -10,11 +10,11 @@ namespace BudgetCalculator
     {
         public string Name {  get; private set; }
         public string Unit {   get; private set; }
-        public decimal Quantity {  get; private set; }
-        public decimal Price {  get; private set; }
-        public decimal TotalPrice { get; private set; }
+        public double Quantity {  get; private set; }
+        public double Price {  get; private set; }
+        public double TotalPrice { get; private set; }
 
-        public Items(string name, string unit, decimal count, decimal price)
+        public Items(string name, string unit, double count, double price)
         {
             Name = name;
             Unit = unit;
