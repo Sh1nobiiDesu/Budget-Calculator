@@ -13,9 +13,10 @@ namespace BudgetCalculator
 {
     public partial class MainForm : Form
     {
-        List<Items> _myItems = new List<Items>();
+        BindingList<Items> _myItems = new BindingList<Items>();
         double _budget = 0;
         AddForm dlg = new AddForm();
+        Point selectedCell = new Point();
         public MainForm()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace BudgetCalculator
             TXTB_Budget.Text = "0";
             DGV_Table.DataSource = _myItems;
             DGV_Table.RowHeadersVisible = false;
+            DGV_Table.AllowUserToAddRows = false;
             DGV_Table.CellClick += DGV_Table_CellClick;
 
             BTN_Edit.Click += BTN_Edit_Click;
@@ -33,17 +35,19 @@ namespace BudgetCalculator
 
         private void DGV_Table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-    {
-        var value = DGV_Table.Rows[e.RowIndex].Cells[e.ColumnIndex].Value?.ToString();
-    }
+            if (e.RowIndex == -1)
+                return;
+
+            selectedCell.X = e.RowIndex;
+            selectedCell.Y = e.ColumnIndex;
         }
 
         private void BTN_Edit_Click(object sender, EventArgs e)
         {
-            DGV_Table.SelectedCells.ToString();
-            Items item = new Items("hi", "hello", 0.1, 12);
-            dlg.Initialize(AddForm.FormMode.Edit, item);
+            var itemToedit = DGV_Table.CurrentRow.DataBoundItem;
+            if (itemToedit == null) return;
+            dlg.Initialize(AddForm.FormMode.Edit, (Items) itemToedit);
+            dlg.ShowDialog();
         }
 
         private void TXTB_Budget_TextChanged(object sender, EventArgs e)
@@ -75,16 +79,14 @@ namespace BudgetCalculator
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 _myItems.Add(dlg.newItem);
-                DGV_Table.DataSource = null;
-                DGV_Table.DataSource = _myItems;
+                //DGV_Table.DataSource = _myItems;
                 ShowTotal();
             }
         }
 
         private void ShowTotal()
         {
-            double total = 0;
-            _myItems.ForEach(item => total += item.TotalPrice);
+            double total = _myItems.Sum((x) => x.TotalPrice);
 
             Invoke(new Action(() => { LBL_Total.Text = 
                 $"Your total spending is :{total} \n" +

@@ -35,10 +35,10 @@
             this.BTN_Delete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.BTN_Edit = new System.Windows.Forms.ToolStripButton();
-            this.DGV_Table = new System.Windows.Forms.DataGridView();
             this.LBL_Budget = new System.Windows.Forms.Label();
             this.TXTB_Budget = new System.Windows.Forms.TextBox();
             this.LBL_Total = new System.Windows.Forms.Label();
+            this.DGV_Table = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
             this.SuspendLayout();
@@ -97,16 +97,6 @@
             this.BTN_Edit.Size = new System.Drawing.Size(39, 24);
             this.BTN_Edit.Text = "Edit";
             // 
-            // DGV_Table
-            // 
-            this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Table.Location = new System.Drawing.Point(12, 30);
-            this.DGV_Table.Name = "DGV_Table";
-            this.DGV_Table.RowHeadersWidth = 51;
-            this.DGV_Table.RowTemplate.Height = 24;
-            this.DGV_Table.Size = new System.Drawing.Size(849, 408);
-            this.DGV_Table.TabIndex = 3;
-            // 
             // LBL_Budget
             // 
             this.LBL_Budget.AutoSize = true;
@@ -131,15 +121,25 @@
             this.LBL_Total.TabIndex = 7;
             this.LBL_Total.Text = "label1";
             // 
+            // DGV_Table
+            // 
+            this.DGV_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Table.Location = new System.Drawing.Point(12, 33);
+            this.DGV_Table.Name = "DGV_Table";
+            this.DGV_Table.RowHeadersWidth = 51;
+            this.DGV_Table.RowTemplate.Height = 24;
+            this.DGV_Table.Size = new System.Drawing.Size(849, 385);
+            this.DGV_Table.TabIndex = 8;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 521);
+            this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.LBL_Total);
             this.Controls.Add(this.TXTB_Budget);
             this.Controls.Add(this.LBL_Budget);
-            this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.toolStrip1);
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -159,10 +159,10 @@
         private System.Windows.Forms.ToolStripButton BTN_Delete;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton BTN_Edit;
-        private System.Windows.Forms.DataGridView DGV_Table;
         private System.Windows.Forms.Label LBL_Budget;
         private System.Windows.Forms.TextBox TXTB_Budget;
         private System.Windows.Forms.Label LBL_Total;
+        private System.Windows.Forms.DataGridView DGV_Table;
     }
 }
 
