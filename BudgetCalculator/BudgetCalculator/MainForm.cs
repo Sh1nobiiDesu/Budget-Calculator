@@ -27,16 +27,18 @@ namespace BudgetCalculator
             DGV_Table.DataSource = _myItems;
             DGV_Table.RowHeadersVisible = false;
             DGV_Table.AllowUserToAddRows = false;
-            DGV_Table.CellClick += DGV_Table_CellClick;
             DGV_Table.ReadOnly = false;
 
             BTN_Edit.Click += BTN_Edit_Click;
+            BTN_Delete.Click += BTN_Delete_Click;
         }
 
-        private void DGV_Table_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void BTN_Delete_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex == -1)
-                return;
+            _myItems.AllowRemove = true;
+            var itemTodelete = DGV_Table.CurrentRow?.DataBoundItem;
+            if (itemTodelete == null ) return;
+            _myItems.Remove((Items)itemTodelete);
         }
 
         private void BTN_Edit_Click(object sender, EventArgs e)
