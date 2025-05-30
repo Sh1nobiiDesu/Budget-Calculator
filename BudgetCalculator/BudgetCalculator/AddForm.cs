@@ -60,6 +60,7 @@ namespace AddDLG
 
         private void BTN_Cancel_Click(object sender, EventArgs e)
         {
+            ReInit();   
             DialogResult = DialogResult.Cancel;
         }
 

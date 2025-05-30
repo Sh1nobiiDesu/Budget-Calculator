@@ -16,7 +16,6 @@ namespace BudgetCalculator
         BindingList<Items> _myItems = new BindingList<Items>();
         double _budget = 0;
         AddForm dlg = new AddForm();
-        Point selectedCell = new Point();
         public MainForm()
         {
             InitializeComponent();
@@ -29,6 +28,7 @@ namespace BudgetCalculator
             DGV_Table.RowHeadersVisible = false;
             DGV_Table.AllowUserToAddRows = false;
             DGV_Table.CellClick += DGV_Table_CellClick;
+            DGV_Table.ReadOnly = false;
 
             BTN_Edit.Click += BTN_Edit_Click;
         }
@@ -37,17 +37,19 @@ namespace BudgetCalculator
         {
             if (e.RowIndex == -1)
                 return;
-
-            selectedCell.X = e.RowIndex;
-            selectedCell.Y = e.ColumnIndex;
         }
 
         private void BTN_Edit_Click(object sender, EventArgs e)
         {
-            var itemToedit = DGV_Table.CurrentRow.DataBoundItem;
-            if (itemToedit == null) return;
+            _myItems.AllowEdit = true;
+            var itemToedit = DGV_Table.CurrentRow?.DataBoundItem;
+            if (itemToedit == null)
+                return;
             dlg.Initialize(AddForm.FormMode.Edit, (Items) itemToedit);
-            dlg.ShowDialog();
+            if(dlg.ShowDialog() == DialogResult.OK)
+            {
+                _myItems[DGV_Table.CurrentRow.Index] = dlg.newItem;
+            }
         }
 
         private void TXTB_Budget_TextChanged(object sender, EventArgs e)

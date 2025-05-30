@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|solutionrelative:budgetcalculator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\budgetcalculator\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|solutionrelative:budgetcalculator\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\budgetcalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|solutionrelative:budgetcalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|c:\\users\\markt\\onedrive\\desktop\\github\\personal_projects\\budgetcalculator\\budgetcalculator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|solutionrelative:budgetcalculator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\budgetcalculator\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|solutionrelative:budgetcalculator\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{616FF5F4-5D65-4E1B-B558-9BBF49C3D4E0}|BudgetCalculator\\BudgetCalculator.csproj|C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\budgetcalculator\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "BudgetCalculator\\MainForm.Designer.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\Program.cs",
               "RelativeDocumentMoniker": "BudgetCalculator\\Program.cs",
@@ -86,14 +86,14 @@
               "RelativeDocumentMoniker": "BudgetCalculator\\MainForm.cs",
               "ToolTip": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\MainForm.cs*",
               "RelativeToolTip": "BudgetCalculator\\MainForm.cs*",
-              "ViewState": "AgIAACMAAAAAAAAAAAAYwDAAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T15:50:59.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Items.cs",
               "DocumentMoniker": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\Items.cs",
               "RelativeDocumentMoniker": "BudgetCalculator\\Items.cs",
@@ -106,15 +106,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AddForm.cs",
               "DocumentMoniker": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\AddForm.cs",
               "RelativeDocumentMoniker": "BudgetCalculator\\AddForm.cs",
               "ToolTip": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\AddForm.cs",
               "RelativeToolTip": "BudgetCalculator\\AddForm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA2wB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwDEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T16:15:08.857Z"
+              "WhenOpened": "2025-05-27T16:15:08.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -125,11 +126,12 @@
               "ToolTip": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\AddForm.cs [Design]",
               "RelativeToolTip": "BudgetCalculator\\AddForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T16:13:23.333Z"
+              "WhenOpened": "2025-05-27T16:13:23.333Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\markt\\OneDrive\\Desktop\\GitHub\\Personal_Projects\\BudgetCalculator\\BudgetCalculator\\MainForm.cs",
               "RelativeDocumentMoniker": "BudgetCalculator\\MainForm.cs",
