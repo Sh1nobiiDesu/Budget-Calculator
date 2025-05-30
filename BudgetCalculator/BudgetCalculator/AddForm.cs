@@ -50,12 +50,12 @@ namespace AddDLG
                 return;
             }
 
+
             BTN_OK.Text = "Save";
             TXTB_Name.Text = item.Name;
-            TXTB_Price.Text = item.Price.ToString();    
+            TXTB_Price.Text = item.Cost.Split(' ')[0];    
             TXTB_Quantity.Text = item.Quantity.ToString();
-            TXTB_Unit.Text = item.Unit;
-            
+            TXTB_Unit.Text = item.Cost.Split(' ')[2];                
         }
 
         private void BTN_Cancel_Click(object sender, EventArgs e)

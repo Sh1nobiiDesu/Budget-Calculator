@@ -39,6 +39,8 @@
             this.TXTB_Budget = new System.Windows.Forms.TextBox();
             this.LBL_Total = new System.Windows.Forms.Label();
             this.DGV_Table = new System.Windows.Forms.DataGridView();
+            this.BTN_Save = new System.Windows.Forms.Button();
+            this.DLG_Save = new System.Windows.Forms.SaveFileDialog();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Table)).BeginInit();
             this.SuspendLayout();
@@ -112,10 +114,11 @@
             this.TXTB_Budget.Name = "TXTB_Budget";
             this.TXTB_Budget.Size = new System.Drawing.Size(125, 22);
             this.TXTB_Budget.TabIndex = 6;
+            this.TXTB_Budget.Text = "0";
             // 
             // LBL_Total
             // 
-            this.LBL_Total.Location = new System.Drawing.Point(12, 456);
+            this.LBL_Total.Location = new System.Drawing.Point(12, 427);
             this.LBL_Total.Name = "LBL_Total";
             this.LBL_Total.Size = new System.Drawing.Size(370, 56);
             this.LBL_Total.TabIndex = 7;
@@ -131,11 +134,21 @@
             this.DGV_Table.Size = new System.Drawing.Size(849, 385);
             this.DGV_Table.TabIndex = 8;
             // 
+            // BTN_Save
+            // 
+            this.BTN_Save.Location = new System.Drawing.Point(786, 424);
+            this.BTN_Save.Name = "BTN_Save";
+            this.BTN_Save.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Save.TabIndex = 9;
+            this.BTN_Save.Text = "Save";
+            this.BTN_Save.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 521);
+            this.Controls.Add(this.BTN_Save);
             this.Controls.Add(this.DGV_Table);
             this.Controls.Add(this.LBL_Total);
             this.Controls.Add(this.TXTB_Budget);
@@ -163,6 +176,8 @@
         private System.Windows.Forms.TextBox TXTB_Budget;
         private System.Windows.Forms.Label LBL_Total;
         private System.Windows.Forms.DataGridView DGV_Table;
+        private System.Windows.Forms.Button BTN_Save;
+        private System.Windows.Forms.SaveFileDialog DLG_Save;
     }
 }
 
