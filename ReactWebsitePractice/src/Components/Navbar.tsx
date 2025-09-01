@@ -34,7 +34,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
 
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu }>
             TRVL <i className="fab fa-typo3"></i>
           </Link>
 
@@ -58,7 +58,7 @@ function Navbar() {
           {/* SERVICES Nav */}
             <li className="nav-item">
               <Link
-                to="/"
+                to="/Services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -69,7 +69,7 @@ function Navbar() {
           {/* PRODUCTS Nav */}
             <li className="nav-item">
               <Link
-                to="/"
+                to="/Products"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
