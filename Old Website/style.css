@@ -1,0 +1,75 @@
+body{
+    background-color: #121212;
+    margin: 0%;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+/* HEADER */
+#headerDiv{
+    margin: 10%;
+    padding: 50px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 55vh;
+}
+.mainHeaders{
+    text-align: center;
+    color: 	whitesmoke;
+    font-weight: bold;
+    margin: 10px;
+}
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1db954;
+}
+#header{
+    font-size: 50px;
+}
+#subheader{
+    font-size: 30px;
+}
+#learnMoreBTN{
+    color: #1ED760;
+    background-color: black;
+    margin-top: 20px;
+    width: 130px;
+    align-self: center;
+    border-radius: 5px;
+    border-color: #1ED760;
+    padding: 5px;
+}
+
+/* NAV BAR */
+nav{
+    background-color: #212121;
+    text-align: right;
+    padding: 10px;
+    padding-right: 10%;
+    box-shadow: 0px 10px 10px;
+    position: fixed;
+    top: 0;
+    width: 90%;
+}
+a{
+    text-align: center;
+    margin: 5px;
+    margin-left: 1%;
+    font-size: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+a:visited{
+    color: whitesmoke;
+}
+
+/* MAIN */
+#main{
+    background-color: #535353;
+    margin: 10px;
+    box-shadow: 10px 10px 10px;
+}
